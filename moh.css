@@ -1,0 +1,421 @@
+ @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;900;1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    scroll-behavior: smooth;
+
+
+}
+:root{
+	--blok1: #ffffff;
+	--blok2: #000;
+	--blok3: #a09dab;
+	--blok4: #f75023;
+}
+
+a{
+    text-decoration: none;
+    color: var(--blok2);
+}
+header{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+header nav{
+    display: flex;
+    gap: 50px;
+}
+header nav a{
+      position: relative;
+      padding: 5px 20px;
+}
+
+  nav a::after{
+    content: '';
+	position: absolute;
+    border-bottom: 2px solid var(--blok4);
+    left: 0;
+    transition:ease 0.4s;
+    bottom: -3px;
+    width: 0;
+
+
+}
+ nav a:hover::after{
+    width: 100%;
+}
+header .logo{
+    margin-left: 50px ;
+    
+}
+header .down{
+
+    margin-right: 50px ;
+    border: 2px solid var(--blok4);
+    padding: 5px 30px;
+    border-radius: 100px;
+
+}
+header .down:hover{
+   background-color: var(--blok4);
+   transition: 0.5s;
+   transform: scale(1.1);
+   text-align: center;
+
+   
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+main .text{
+    width: 450px ;
+    height: 450px;
+    margin: 170px 50px;
+
+}
+main .text .hello{
+    color: var(--blok4);
+    font-size: 20px;
+    letter-spacing: 1px;
+
+}
+main .text h1{
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    /* transform: scaley(0); */
+    transform: rotate(2turn);
+
+}
+main .text .desi{
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+
+
+}
+main .text p{
+ color: var(--blok3);
+ margin-bottom: 30px;
+
+}
+main .text .btn{
+    color: var(--blok1);
+    background-color: var(--blok4);
+    padding: 5px 40px ;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+main .text .sochial{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+
+
+span{
+    color: var(--blok4);
+}
+main .img img{  
+    max-width: 100%;
+	width: 540px;
+	height:auto;
+    margin-right:100px;
+    /* transform: scalex(1.5); */
+    /* transform: rotate(100deg); */
+} 
+main .img img:hover{  
+  
+   transition: 2s;
+   transform: rotate(360deg);
+
+    transform: scale(1.1);
+
+} 
+.bar{
+    margin-left: 50px;
+    display: none;
+}
+@media (max-width:700px ){
+
+    .bar{
+        margin-left: 50px;
+        display: inline-block;
+    }
+
+    header nav{
+        display: none;
+        
+    }
+    main .img img{  
+      display: none;
+    }
+    header .logo{
+       display: none;
+        
+    }
+}
+.card{
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin:100px auto;
+    
+}
+.card > div{
+    width: 30%;
+    height: 350px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
+    
+  
+}
+.card > div:hover{
+  background-color:  #fff8f8;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  transform:  perspective(1000px)  rotatey(10deg) scale(1.05) ;
+}
+.card h3{
+    font-size: 25px;
+   
+}
+.card p{
+    width: 300px;
+    height: 300px;
+    color: #a09dab;
+   
+}
+
+section img{
+    width: 20%;
+    height: 20%;
+    margin-top: 50px;
+}
+.about{
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px
+    ;
+}
+.about img{
+    width: 500px;
+    height: 500px;
+    margin-left: -100px;
+   
+}
+.about .text{
+    width: 500px;
+    height: 500px;
+    margin-top: 150px;
+    
+}
+.about .text h4{
+   color:  #f75023;
+}
+.about .text h2{
+   font-size: 30px;
+}
+.about .text p{
+  color: #a09dab;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+}
+.about .text a{
+    color: #fff8f8;
+  background-color: #f75023;
+  padding: 5px 40px;
+  border-radius: 100px;
+  margin-top: 50px;
+  
+}
+.text a:hover{
+    transition: 1s;
+    font-size: 22px;
+  
+}
+.Portfolio {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+
+}
+.Portfolio .heading{
+    margin-top: 80px;
+
+}
+.Portfolio .heading h4{
+   color: var(--blok4);
+   font-size: 20px;
+
+}
+.Portfolio .heading h2{
+   color: var(--blok2);
+   font-size: 40px;
+
+}
+.Portfolio .heading p{
+   color: var(--blok3);
+}
+.card1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.box:hover{
+ opacity: 0.5   ;
+}
+.card2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;   
+}
+.box .layre{
+    transform: translate(0 , -600%); 
+}
+.Portfolio .cards img{
+   width: 400px;
+   height: 600px;
+   border-radius: 20px;
+}
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.service .heading h3{
+   color: var(--blok4);
+   
+}
+.service .heading p{
+   color: var(--blok3);
+   
+}
+.service .card {
+   margin-top: 50px;
+   flex-wrap: wrap;
+   
+
+}
+.service .card .row {
+   text-align: left;
+}
+
+ .Successfully{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    margin-top: 10px;
+ }
+ .Successfully .card .cards{
+   
+    height: 200px;
+    margin-top: -350px;
+    border-radius: 20px; 
+ }
+ .Successfully .card .col{
+    background-color: #baebcd;
+ }
+ .Successfully .card .cols{
+    background-color:  #D9D1FA;
+ }
+ .Successfully .card .colsm{
+    background-color:  #faedce;
+ }
+ .Successfully .card .cards:hover{
+    /* display: none; */
+ 
+    background-color: ;
+    box-shadow: none;
+    transition:none;
+    transform: none ;
+ }
+ .contenar{
+    width: 100%;
+    height: 500px;
+ }
+ .talk{
+    margin:100px auto;
+    width: 95%;
+    height: 300px;
+    background-color: #8067f0eb;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--blok1);
+    padding: 80px;
+  
+
+ }
+ .talk .action .email{
+  width: 40%;
+  height: 0;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  /* margin-right: 100px; */
+}
+.talk .action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  
+  
+  }
+ .talk .action .sub{
+  background-color: #f75023;
+  border: none;
+  padding:10px 40px;
+  border-radius:  30px;
+  color: #D9D1FA;
+ margin-top: 20px;
+
+
+
+}
+
+.END{
+    text-align: center;
+    margin-top: -70PX;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+ 
+
+
+
+
+
